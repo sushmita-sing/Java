@@ -1,3 +1,7 @@
-public class ExceptionHandling {
+public class ExceptionHandling extends Exception{
+    public ExceptionHandling(){
+
+    }
+
 
 }
