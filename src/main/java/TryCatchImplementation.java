@@ -1,15 +1,16 @@
 import java.lang.ArithmeticException;
 
 class TryCatch{
-    private int val=25;
-    public int divideBy(int d) {
+    final int val = 25;
+    public void divideBy(int d) {
+        int res = 0;
         try {
-            return val/d;
+            res =  val/d;
         }catch(ArithmeticException e) {
             System.out.println("Dividing by 0 is not allowed.");
-            return -1;
         }finally {
-            System.out.println("Never divide any number with 0");
+            System.out.println("Never divide any number with 0, it is a crime, next time if you do it you will be imprisoned");
+            System.out.println(res);
         }
     }
 }
